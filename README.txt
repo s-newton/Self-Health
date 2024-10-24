@@ -1,6 +1,6 @@
 Overview
 
-HealthApp is a user-friendly calorie tracker designed to help users manage their weight goals. Whether you want to lose weight, gain weight, or maintain your current weight, HealthApp simplifies the process of tracking your daily calorie intake. The app provides a foundation for smart eating habits, with future enhancements planned to improve its functionality through food databases and personalized meal recommendations.
+Self-Health is a user-friendly calorie tracker designed to help users manage their weight goals. Whether you want to lose weight, gain weight, or maintain your current weight, HealthApp simplifies the process of tracking your daily calorie intake. The app provides a foundation for smart eating habits, with future enhancements planned to improve its functionality through food databases and personalized meal recommendations.
 Features
 
     Calorie Goal Management
