@@ -1,45 +1,52 @@
-Overview
+# Self Health
 
-Self-Health is a user-friendly calorie tracker designed to help users manage their weight goals. Whether you want to lose weight, gain weight, or maintain your current weight, HealthApp simplifies the process of tracking your daily calorie intake. The app provides a foundation for smart eating habits, with future enhancements planned to improve its functionality through food databases and personalized meal recommendations.
-Features
+## Overview  
+**Self Health** is a user-friendly calorie tracker designed to help users manage their weight goals. Whether you want to lose weight, gain weight, or maintain your current weight, **Self Health** simplifies tracking your daily calorie intake. The app serves as a foundation for smart eating habits, with future updates planned to enhance its functionality through food databases and personalized meal recommendations.
 
-    Calorie Goal Management
-        Select your goal: Lose, Gain, or Maintain weight.
-        Daily calorie target updates based on your goal and profile (age, gender, weight, height, and activity level).
+---
 
-    Manual Entry
-        Enter foods manually along with their calorie count.
+## Features  
 
-    Progress Tracker
-        View your calorie intake vs. your daily target.
-        Visualize weekly progress to help you stay on track.
+### 🔥 Calorie Goal Management  
+- Select your goal: **Lose**, **Gain**, or **Maintain** weight.  
+- Daily calorie target updates automatically based on your profile:  
+  - Age  
+  - Gender  
+  - Weight  
+  - Height  
+  - Activity Level  
 
+### ✏️ Manual Entry  
+- Manually input foods along with their calorie counts.  
 
-Roadmap
+### 📊 Progress Tracker  
+- View your **calorie intake vs. daily target**.  
+- Visualize **weekly progress** to stay motivated and on track.  
 
-Phase 1: Core Functionality (Current State)
+---
 
-    Users can manually input foods and calories.
-    Track daily intake and monitor progress based on chosen weight goal.
+## Roadmap  
 
-Phase 2: Food Database Integration (Planned)
+### **Phase 1: Core Functionality (Current State)**  
+- Users can **manually input foods and calories**.  
+- Track daily intake and monitor progress based on weight goals.  
 
-Integrate official APIs from food databases to pull detailed food information, including:
+### **Phase 2: Food Database Integration (Planned)**  
+Integrate official APIs from food databases for detailed food information:  
 
-    USDA FoodData Central
-        Comprehensive database with nutritional data on packaged and raw foods.
-    Open Food Facts API
-        User-contributed database with barcode scanning capabilities.
-    Edamam Nutrition API
-        Real-time nutrition analysis and meal recommendations.
+- **USDA FoodData Central**  
+  - A comprehensive database with nutritional data for packaged and raw foods.  
+- **Open Food Facts API**  
+  - A user-contributed database with **barcode scanning capabilities**.  
+- **Edamam Nutrition API**  
+  - Real-time **nutrition analysis** and meal recommendations.  
 
-Phase 3: Meal Recommendations and Tracking (Future)
+### **Phase 3: Meal Recommendations and Tracking (Future)**  
+- Provide **meal recommendations** based on user goals and preferences.  
+- Suggest foods to help users meet their **calorie and macronutrient targets**.  
 
-    Provide meal recommendations based on user goals and preferences.
-    Suggest foods to help users hit their calorie and macro goals.
-
-Phase 4: Advanced Nutrition Tracking (Future)
-
-    Track macronutrient and micronutrient intake, such as carbs, protein, fats, vitamins, and minerals.
-    Ensure users meet nutritional balance for optimal health.
-    Alerts if a nutrient is under or over the recommended amount.
+### **Phase 4: Advanced Nutrition Tracking (Future)**  
+- Track **macronutrients and micronutrients**, including:  
+  - Carbs, Protein, Fats, Vitamins, Minerals  
+- Ensure **nutritional balance** for optimal health.  
+- Generate alerts if a nutrient intake is below or above the recommended amount.  
