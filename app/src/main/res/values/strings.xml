@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">graph</string>
+    <string name="nf_weight">Weight:</string>
+    <string name="nf_date">Date</string>
+    <string name="nav_graphfrag">Graph</string>
+    <string name="nav_numberfrag">Number</string>
+</resources>
