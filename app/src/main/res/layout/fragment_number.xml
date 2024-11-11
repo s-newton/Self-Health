@@ -77,13 +77,14 @@
         android:text="@string/clear_button"
         android:textAlignment="center"
         android:textSize="20sp" />
+
     <TextView
         android:id="@+id/numberfragment_show"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="275dp"
         android:layout_marginTop="425dp"
-        android:textSize="10sp"/>
-
+        android:layout_marginLeft="10dp"
+        android:textSize="10sp" />
 
 
 </FrameLayout>

@@ -220,7 +220,7 @@ public class NumberFragment extends Fragment {
                     public void run() {
                         StringBuilder sb = new StringBuilder();
                         for(WeightData w : weightDataList){
-                            sb.append(w.getDate()+":"+ w.getWeight());
+                            sb.append(" "+w.getDate()+":"+ w.getWeight()+" lbs");
                             sb.append("\n");
                         }
                         String printData = sb.toString();
