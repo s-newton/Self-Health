@@ -1,31 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".NumberFragment">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blueberry_200"
+        android:text="Weight Info"
+        android:textAlignment="center"
+        android:textSize="50sp" />
+
+    <ImageView
+        android:id="@+id/nf_calendar"
+        android:layout_width="200dp"
+        android:layout_height="102dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/schedule_calendar"
+        android:padding="100dp" />
 
     <TextView
         android:id="@+id/numberfragment_text"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/bandName"
-        tools:text="@string/nf_weight"
-        />
+        android:layout_marginLeft="178dp"
+        android:layout_marginTop="190dp"
+        android:text="@string/nf_weight"
+        android:textSize="20sp" />
 
 
     <EditText
-        app:layout_constraintTop_toBottomOf="@id/numberfragment_text"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
         android:id="@+id/numberfragment_weight"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="60dp"
+        android:layout_marginLeft="123dp"
+        android:layout_marginTop="210dp"
+        android:ems="8"
         android:inputType="number" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/numberfragment_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="270dp"
+        android:background="#F00000"
+        android:backgroundTint="#D90000"
+        android:text="@string/save_button"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/numberfragment_print"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="340dp"
+        android:background="#A40000"
+        android:text="@string/print_button"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+    <Button
+        android:id="@+id/numberfragment_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="400dp"
+        android:background="#A40000"
+        android:text="@string/clear_button"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/numberfragment_show"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:layout_marginTop="425dp"
+        android:textSize="10sp"/>
+
+
+
+</FrameLayout>

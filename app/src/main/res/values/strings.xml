@@ -1,7 +1,13 @@
 <resources>
     <string name="app_name">graph</string>
-    <string name="nf_weight">Weight:</string>
+    <string name="nf_weight">Weight</string>
     <string name="nf_date">Date</string>
     <string name="nav_graphfrag">Graph</string>
     <string name="nav_numberfrag">Number</string>
+    <string name="save_button">Save</string>
+    <string name="ma_btnWI">Weight Info</string>
+    <string name="ma_btnChart">Progress</string>
+    <string name="print_button">Print</string>
+    <string name="clear_button">Clear</string>
+    <string name="sort_button">Sort</string>
 </resources>

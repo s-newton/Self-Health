@@ -1,33 +1,54 @@
 package com.zybooks.graph;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.nav_host_fragment);
+        //Managing Fragments
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        //Weight Info Button fragment manager logic
+        Button btnwi = findViewById(R.id.btnWI);
+        Button btnchart = findViewById(R.id.btnChart);
 
-        if (navHostFragment != null) {
-            NavController navController = navHostFragment.getNavController();
-            AppBarConfiguration appBarConfig = new AppBarConfiguration.
-                    Builder(navController.getGraph()).build();
-            NavigationUI.setupActionBarWithNavController(this, navController, appBarConfig);
-        }
-    }
 
-    @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        return navController.navigateUp() || super.onSupportNavigateUp();
+        btnwi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                fragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainerView, NumberFragment.class,null)
+                        .setReorderingAllowed(true)
+                        .addToBackStack("name")
+                        .commit();
+            }
+        });
+        //Chart Button fragment manager logic
+
+        btnchart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                fragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainerView, GraphFragment.class,null)
+                        .setReorderingAllowed(true)
+                        .addToBackStack("name")
+                        .commit();
+            }
+        });
     }
 }
