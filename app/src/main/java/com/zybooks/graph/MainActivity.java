@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         //Weight Info Button fragment manager logic
         Button btnwi = findViewById(R.id.btnWI);
         Button btnchart = findViewById(R.id.btnChart);
+        Button btnBmiBmr = findViewById(R.id.lcalbutton);
 
 
         btnwi.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +49,17 @@ public class MainActivity extends AppCompatActivity {
                         .setReorderingAllowed(true)
                         .addToBackStack("name")
                         .commit();
+            }
+        });
+        btnBmiBmr.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                fragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainerView, bmiCalculator.class,null)
+                        .setReorderingAllowed(true)
+                        .addToBackStack("name")
+                        .commit();
+
             }
         });
     }
