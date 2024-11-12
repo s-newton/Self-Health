@@ -4,4 +4,6 @@
     <color name="blueberry_400">#42A5F5</color>
     <color name="blueberry_900">#0f46a1</color>
     <color name="white">#FFF</color>
+    <color name="red">#A52D36</color>
+    <color name="black">#2E2F31</color>
 </resources>

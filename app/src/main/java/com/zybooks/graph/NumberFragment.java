@@ -93,7 +93,7 @@ public class NumberFragment extends Fragment {
         };
 
         weightDataDB = Room.databaseBuilder(getContext(), WeightDataRepo.class,"WeightDataDB")
-                .addCallback(myCallBack).build();
+                .addCallback(myCallBack).fallbackToDestructiveMigration().build();
 
         Calendar calendar = Calendar.getInstance();
         int year = calendar.get(Calendar.YEAR);
