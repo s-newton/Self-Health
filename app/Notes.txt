@@ -1,0 +1,70 @@
+List of things that you may need to make it work on your PC
+look through the entire thing
+
+copy this and put it into build.gradle(Module:app)
+
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+
+android {
+    namespace 'com.zybooks.graph'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.zybooks.graph"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+    dependencies {
+
+        implementation libs.appcompat
+        implementation libs.material
+        implementation libs.activity
+        implementation libs.constraintlayout
+        implementation libs.annotation
+        implementation libs.support.annotations
+        testImplementation libs.junit
+        androidTestImplementation libs.ext.junit
+        androidTestImplementation libs.espresso.core
+        //Navigation
+        implementation 'androidx.navigation:navigation-fragment:2.3.5'
+        implementation 'androidx.navigation:navigation-ui:2.3.5'
+        //Room Database
+        implementation 'androidx.room:room-runtime:2.4.0'
+        annotationProcessor 'androidx.room:room-compiler:2.4.0'
+        implementation 'com.jjoe64:graphview:4.2.1'
+
+    }
+}
+
+****then in gradle.properties
+android.useAndroidX=true
+android.enableJetifier=true
+
+***then in WeightDataRepo.java, if the code fails for DAO reasons
+ @Database(entities = {WeightData.class},version = 2) with
+@Database(entities = {WeightData.class},version = 1)
+
+

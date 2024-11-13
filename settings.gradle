@@ -1,3 +1,4 @@
+
 pluginManagement {
     repositories {
         google {
@@ -19,5 +20,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Own_Project"
+rootProject.name = "graph"
 include ':app'
+
